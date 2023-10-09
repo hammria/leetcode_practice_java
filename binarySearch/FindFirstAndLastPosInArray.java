@@ -2,8 +2,10 @@ package binarySearch;
 
 import java.util.Arrays;
 
-// binary search twice to find left bound and right bound, O(logn)
-// or you can try binary search first find the target and linear search in both side
+/**
+ * binary search twice to find left bound and right bound, O(logn)
+ * or you can try binary search first find the target and linear search in both side
+ **/
 public class FindFirstAndLastPosInArray {
 
     public static void main(String[] args) {
@@ -18,7 +20,7 @@ public class FindFirstAndLastPosInArray {
         int[] res = new int[]{-1, -1};
         int lower = 0;
         int upper = nums.length - 1;
-        int mid = 0;
+        int mid;
         int index = -1;
 
         while (lower <= upper) {
